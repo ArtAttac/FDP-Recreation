@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Fidelity Payment Services</title>
+
+    <!-- Allow mobile viewability -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- import Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <!-- Import Compiled Materilize CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Import Materialize Icons Stylesheet -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Import custom CSS style sheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <div class="loader">
+      <div class="inner"></div>
+    </div>
+
+    <!-- The NavBar fixed to the top of the page with logo and three dropdown options -->
+    <nav id="navigation">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo"
+          ><img src="img/icons/fdplogo.png" alt=""
+        /></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a class="dropdown-trigger btn" href="#" data-target="dropdown1">Payment Integrations<i class="material-icons md-10">menu</i></a
+            >
+            <!-- What the dropdown displays -->
+            <ul id="dropdown1" class="dropdown-content">
+              <li><a href="#!">one</a></li>
+              <li><a href="#!">two</a></li>
+              <li class="divider" tabindex="-1"></li>
+              <li><a href="#!">three</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="dropdown-trigger btn" href="#" data-target="dropdown1"
+              >Developers<i class="material-icons">menu</i></a
+            >
+          </li>
+          <li><a href="badges.html">Partners</a></li>
+          <li><a href="collapsible.html">Merchants</a></li>
+          <li>
+            <a class="dropdown-trigger btn" href="#!" data-target="dropdown1"
+              >Company<i class="material-icons tiny">menu</i></a
+            >
+            <!-- Instead of button for request Sandbox, an icon for it -->
+            <li><a href="sass.html"><i class="material-icons">rate_review</i></a></li>
+           <li><a href="badges.html">Support</a></li>
+          <li><a href="collapsible.html">Sign-In</a></li>
+          </li>
+        </ul>
+      </div>
+    
+      <!-- The menu when on mobile, not yet initialized -->
+    <ul class="sidenav" id="mobile-demo">
+      <li>
+        <a class="dropdown-trigger" href="#!" data-target="dropdown1"
+          >Payment Integrations</a
+        >
+      </li>
+      <li>
+        <a class="dropdown-trigger" href="#!" data-target="dropdown2"
+          >Developers</a
+        >
+      </li>
+      <li><a href="badges.html">Partners</a></li>
+      <li><a href="collapsible.html">Merchants</a></li>
+      <li>
+        <a class="dropdown-trigger" href="#!" data-target="dropdown3"
+          >Company</a
+        >
+      </li>
+    </ul>
+  </nav>
+
+    <!-- First Section with jumbotron showing general info -->
+    <div class="homePage">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="jumbotron jumbotron-fluid">
+              <div class="container">
+                <h1 class="display-5">
+                  The future of integrated payments, today
+                </h1>
+                <p class="lead">
+                  Cardknox is the leading developer-frienedly payment solution
+                  to integrate payments in-store, online, or mobile,
+                  hassle-free.
+                </p>
+                <!-- The two buttons at the bottom of the jumbotron -->
+                <div class="center">
+                  <p class="lead">
+                    <a class="btn btn-warning waves-effect waves-light btn-lg" href="#" role="button"
+                      >Create sandbox account</a
+                    >
+                    <a class="btn btn-primary waves-effect waves-light black-text white btn-lg" href="#" role="button"
+                      >Contact sales</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Next section dedicated to the image (background could be perfected, time restraint) -->
+    <div id="home" class="section">
+        <div class="container">
+           <div class="row">
+            <div class="col-md-12">
+              <img class="homeImage" src="img/image1.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Solution part, two columns, one with the text and info with a button and the other the image of example EMV certifications -->
+      <div id="nextPart" class="section">
+          <div class="container">
+             <div class="row">
+              <div class="col-md-7">
+                <div><p class="light">Featured Solution</p>
+                <h4>Integrating EMV payments has never been this simple and flexible</h4>
+                <p class="lightText">Tap into our native EMV certifications, bypass common integration challenges with our innovative solutions, and get ready to integrate secure payments into POS systems with just a few lines of code using our easy SDK.</p>
+                <a class="btn btn-warning waves-effect waves-light btn-lg" href="#" role="button"
+                      >Create sandbox account</a
+                    >
+                </div>
+              </div>
+                <div class="col-md-5">
+                  <img class="infoImage" src="img/image2.png" alt="">
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Where the background splits into an angled background (time restraint) -->
+        <div id="thirdParts" class="section">
+            <div class="container">
+               <div class="row">
+                 <!-- Created 3 columns, the two on the side contain nothing and the middle contain the info about the sandbox -->
+                 <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="center">
+                        <p class="lead">
+                            <h4 class="thirdHeading">No integration is too complex</h4>
+                            <p class="greyText">Our Solutions make even the most difficult integrations that much easier, so you can get exactly what you need in a lot less time.</p>
+                          <a class="btn btn-primary waves-effect waves-light white-text btn-lg" href="#" role="button">Request Sandbox Account</a>
+                        </p>
+                      </div>
+                </div>
+                <div class="col-md-3"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 columns all equally spaced with icon at the top, a smaller heading following and a small description with a link to read more (change p tags to anchor tags) -->
+          <div id="fourth" class="section">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3">
+                  <img class="iconImage" src="img/icons/logo1.png" />
+                  <h5 class="iconText">Personalized Support</h5>
+                  <p class="greyTextIcon">Our powerful SDK can be integrated
+                      into your POS software
+                      with a few lines of code and
+                      supports the most number of
+                      processors and terminals.</p>
+                      <p class="learnMore">Learn More<i class="material-icons center">arrow_right_alt</i></p>
+                </div>
+                <div class="col-md-3">
+                  <img class="iconImage" src="img/icons/logo2.png" />
+                  <h5 class="iconText">Lower Processing Fees</h5>
+                  <p class="greyTextIcon">Our powerful SDK can be integrated
+                      into your POS software
+                      with a few lines of code and
+                      supports the most number of
+                      processors and terminals.</p>
+                      <p class="learnMore">Learn More<i class="material-icons center">arrow_right_alt</i></p>
+                </div>
+                <div class="col-md-3">
+                  <img class="iconImage" src="img/icons/logo3.png" />
+                  <h5 class="iconText">Advanced Payment Security</h5>
+                  <p class="greyTextIcon">Our powerful SDK can be integrated
+                      into your POS software
+                      with a few lines of code and
+                      supports the most number of
+                      processors and terminals.</p>
+                      <p class="learnMore">Learn More<i class="material-icons center">arrow_right_alt</i></p>
+                </div>
+                <div class="col-md-3">
+                  <img class="iconImage" src="img/icons/logo4.png" />
+                  <h5 class="iconText">Payment and Retail Technology</h5>
+                  <p class="greyTextIcon">Our powerful SDK can be integrated
+                      into your POS software
+                      with a few lines of code and
+                      supports the most number of
+                      processors and terminals.</p>
+                      <p class="learnMore">Learn More<i class="material-icons center">arrow_right_alt</i></p>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Another section containing an image taking 7/12 of the row and the rest containing a list with a green check circle as the icon to the right of the list bar. A button follows on the bottom.  -->
+          <div id="fifth" class="section">
+              <div class="container">
+                 <div class="row">
+                  <div class="col-md-7">
+                    <img class="homeImage" src="img/img3.png" />
+                  </div>
+                  <div class="col-md-5 listing">
+                    <h3>Unique Settings and Features</h3>
+                    <h6>Supercharge your integration</h6>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          Customized batch scheduling
+                          <i class="material-icons greenCheck">check_circle</i>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Intelligent transaction 
+                            <i class="material-icons greenCheck">check_circle</i>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Proprietary card reader
+                            <i class="material-icons greenCheck">check_circle</i>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Force debit over credit
+                            <i class="material-icons greenCheck">check_circle</i>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Void, void release and related commands
+                            <i class="material-icons greenCheck">check_circle</i>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Powerful tokenization with multi-account support
+                            <i class="material-icons greenCheck">check_circle</i>
+                        </li>
+                      </ul>
+                      <a class="btn btn-primary waves-effect waves-light white-text btn-lg" href="#" role="button">Request Sandbox Account</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+    <!-- Importing script tag for popper, bootstrap, materialize and JQuery in that order. Last script is my custom JS script. -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Import JQuery for dropdown -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
